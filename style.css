@@ -1,8 +1,17 @@
+@font-face {
+    font-family: nbi;
+    src: url(assets/NBInternationalProBoo.ttf);
+}
+@font-face {
+    font-family: rejoyc;
+    src: url(assets/Rejouice-Headline.ttf);
+}
+
 *{
     margin:0;
     padding:0;
     box-sizing: 0;
-    font-family:'Gilroy';
+    font-family:'nbi';
 }
 html,body{
     height:100%;
@@ -12,7 +21,7 @@ html,body{
 #page1{
     height:100vh;
     width:100%;
-    background:red;
+    /* background-color:red; */
     position: relative;
 }
 
@@ -20,4 +29,48 @@ html,body{
     height:100%;
     width:100%;
     object-fit: cover;
+    position: absolute;
 }
+
+#cursor{
+    height:7vw;
+    width:7vw;
+    background-color:#FF5F38;
+    
+}
+#page1-content{
+    height:100%;
+    width:100%;
+    /* background-color:black; */
+    position: relative;
+    z-index: 2;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width:100%; */
+    /* background-color:red; */
+    padding:2vw 3vw;
+}
+nav h3{
+    font-size:1.8vw;
+
+}
+
+#rejouice-text{
+    font-size:25rem;
+    font-family:rejoyc;
+    text-align: center;
+    line-height:20vw;    
+}
+#rejouice-text span{
+    font-family:rejoyc;
+
+}
+
