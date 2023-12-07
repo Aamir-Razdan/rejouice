@@ -23,6 +23,7 @@ html,body{
     width:100%;
     /* background-color:red; */
     position: relative;
+    
 }
 
 #page1 video{
@@ -33,10 +34,21 @@ html,body{
 }
 
 #cursor{
-    height:7vw;
-    width:7vw;
+    height:7.5vw;
+    width:7.5vw;
     background-color:#FF5F38;
-    
+    border-radius:50%;
+    position:fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transform:translate(-50%,-50%);   
+
+}
+#cursor h3{
+    font-size:1.2vw;
+    font-weight:800;
 }
 #page1-content{
     height:100%;
@@ -67,10 +79,16 @@ nav h3{
     font-size:25rem;
     font-family:rejoyc;
     text-align: center;
-    line-height:20vw;    
+    line-height:24vw;    
 }
 #rejouice-text span{
     font-family:rejoyc;
 
+}
+
+#page2{
+    height:100vh;
+    width:100%;
+    background:red;
 }
 
