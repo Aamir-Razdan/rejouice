@@ -28,6 +28,7 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
 
+// _____________________________________________________________=------------------------------------
 
 
 function cursorEffect(){
@@ -101,3 +102,25 @@ function page2Animation(){
 
 
 page2Animation();
+
+function page3Animation(){
+    gsap.from("#page3-top h2",{
+        y:120,
+        stagger:0.2,
+        duration:1,
+        scrollTrigger:{
+            trigger:"#page3",
+            scroller:"#main",
+            start:"top 40%",
+            end:"top 45%",
+            // marker:true,
+            scrub:2
+        },
+       
+    })
+}
+
+page3Animation()
+
+
+
