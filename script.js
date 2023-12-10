@@ -65,23 +65,23 @@ page1Content.addEventListener('mouseleave',(dets)=>{
 cursorEffect();
 
 
-// function page1textAnimation(){
-//     gsap.from(",r-text",{
-//         y:120,
-//         stagger:0.2,
-//         duration:1,
-//         scrollTrigger:{
-//             trigger:"#page1",
-//             scroller:"#main",
-//             start:"top 40%",
-//             end:"top 25%",
-//             // marker:true,
-//             scrub:2
-//         }
-//     })
-// }
+function page1textAnimation(){
+    gsap.from(".r-text",{
+        y:-120,
+        stagger:0.2,
+        duration:1,
+        scrollTrigger:{
+            trigger:"#page1",
+            scroller:"#main",
+            start:"top 40%",
+            end:"top 25%",
+            // marker:true,
+            scrub:2
+        }
+    })
+}
 
-// page1textAnimation();
+page1textAnimation();
 
 function page2Animation(){
     gsap.from(".page2-text h1",{
