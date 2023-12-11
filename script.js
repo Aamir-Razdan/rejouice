@@ -122,5 +122,50 @@ function page3Animation(){
 
 page3Animation()
 
+function slideranimation(){
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: true,
+          },
+      });
+}
+
+slideranimation();
+
+
+var tl=gsap.timeline()
+
+tl.from("#loader h3",{
+    x:200,
+    opacity:0,
+    duration:1,
+    stagger:0.1
+
+})
+
+tl.to('#loader h3',{
+    opacity:0,
+    x:-10,
+    duration:1,
+    stagger:0.1
+})
+tl.to("#loader",{
+    opacity:0
+})
+tl.to("#loader",{
+    
+    display:"none"
+})
+
+tl.from("#rejouice-text span",{
+    y:100,
+    opacity:0,
+    stagger:0.1
+})
+
 
 

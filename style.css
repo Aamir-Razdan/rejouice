@@ -18,6 +18,7 @@
 html,body{
     height:100%;
     width:100%;
+    background-color:#FAF8F3
 }
 
 #page1{
@@ -83,11 +84,12 @@ nav h3{
     font-size:25rem;
     font-family:rejoyc;
     text-align: center;
-    line-height:24vw;    
+    line-height:10vw;
+       
 }
 #rejouice-text span{
     font-family:rejoyc;
-
+    display: inline-block; 
 }
 
 #page2{
@@ -204,4 +206,99 @@ hr{
 .box:hover img {
     opacity:0;
 
+}
+
+#page4{
+    /* height:100vh; */
+    width:100%;
+    position: relative;
+    
+}
+#circle-video{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#circle-video video{
+    height:100%;
+}
+
+#circle-video svg{
+    position:absolute;
+    height:40%;
+
+}
+
+#page5{
+    width:100%;
+    height:100vh;
+    padding:4vw 0;
+    position:relative;
+
+
+}
+
+#page5 h1{
+    font-size:10vw;
+    font-family:rejoyc;
+    font-weight:100;
+    border-bottom:1px solid #000000; 
+    width:96%;
+    margin-left:2%;
+
+}
+
+#swiperdiv{
+    height:60vh;
+    width:100%;
+    /* background:red; */
+    margin-top:-3%;
+}
+.swiper {
+    width: 130%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    /* width:400px !important; */
+    text-align: center;
+    font-size: 18px;
+    /* background: #1c0a0a; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 19%;
+    /* height: 100%; */
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #loader{
+    height:100%;
+    width:100%;
+    position:fixed;
+    top:0;
+    background-color: #000;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    font-size:2vw;
+    color:#fff;
+    justify-content: center;
+    
+
+    
+}
+#loader h3{
+    padding-left:20px;
+    font-size:3vw;
 }
